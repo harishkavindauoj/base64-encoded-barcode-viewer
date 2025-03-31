@@ -1,15 +1,15 @@
-# Base64 Encoded Barcode Viewer
+# Base64 Encoded Image Viewer
 
-A simple web tool to view and display barcodes that are encoded in base64 format.
+A simple web tool to view and display any base64-encoded images, including barcodes, QR codes, and other image formats.
 
 ## Overview
 
-This tool allows you to paste base64-encoded barcode images and instantly view them in your browser. It supports various image formats including PNG, JPEG, GIF, and SVG that contain barcode data.
+This tool allows you to paste base64-encoded images and instantly view them in your browser. It works with any image format that your browser can render.
 
 ## Features
 
-- Paste any base64-encoded barcode image
-- Auto-detection of image format
+- Paste any base64-encoded image
+- Auto-detection of common image formats
 - Works with or without the data URI prefix (`data:image/png;base64,`)
 - Simple, clean interface
 - No server-side processing - everything happens in your browser
@@ -18,24 +18,29 @@ This tool allows you to paste base64-encoded barcode images and instantly view t
 ## How to Use
 
 1. Open the HTML file in any modern web browser
-2. Paste your base64-encoded barcode string into the text area
-3. Click the "View Barcode" button
-4. Your barcode will be displayed in the results section below
+2. Paste your base64-encoded image string into the text area
+3. Click the "View Image" button
+4. Your image will be displayed in the results section below
 
 ## Use Cases
 
-- Testing barcode generation systems
-- Verifying base64-encoded barcode data
-- Quickly converting base64 strings to visible barcodes
-- Debugging applications that generate barcodes in base64 format
+- Viewing base64-encoded barcodes or QR codes
+- Testing image generation systems
+- Verifying base64-encoded image data
+- Quickly converting base64 strings to visible images
+- Debugging applications that generate images in base64 format
 
 ## Technical Details
 
-The viewer automatically attempts to detect the image format from the base64 string. Supported formats include:
+The viewer automatically attempts to detect the image format from the base64 string. Common formats that browsers can display include:
 - PNG
 - JPEG
 - GIF
 - SVG
+- WebP
+- And others supported by your browser
+
+Note that this is a generic image viewer - it doesn't specifically process or validate barcode data. It simply displays whatever image is encoded in the base64 string you provide.
 
 ## Installation
 
